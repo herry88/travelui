@@ -1,39 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
-//import 'dart:async';
-//import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:travelui/components/cardAccount.dart';
 
-class HomeScreen extends StatelessWidget {
-  Size deviceSize;
+
+class Home extends StatefulWidget {
   @override
-  Widget appBarColumn(BuildContext context) => SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 4.0, vertical: 18.0),
-          child: new Column(
-            children: <Widget>[
-              new Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  new IconButton(
-                    icon: new Icon(
-                        defaultTargetPlatform == TargetPlatform.android
-                            ? Icons.arrow_back
-                            : Icons.arrow_back_ios,
-                        color: Colors.white),
-                    onPressed: () => Navigator.canPop(context)
-                        ? Navigator.pop(context)
-                        : null,
-                  ),
-                ],
-              ),
-            ],
-          ),
-        ),
-      );
+  _HomeState createState() => _HomeState();
+}
 
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return null;
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('TrapelokaKW'),
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.more_vert),
+              onPressed: () {}
+              ),
+        ],
+      ),
+      body: ListView(
+        children: <Widget>[
+          CardAccount(),
+        ],
+      ),
+    );
   }
 }

@@ -30,16 +30,16 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final _layoutPage = [
     Home(),
-    Saved(),
-    Order(),
-    Group(),
-    Inbox(),
-    Account()
+//    Saved(),
+//    Order(),
+//    Group(),
+//    Inbox(),
+//    Account()
   ];
 
 
 
-  void _onTabItem(){
+  void _onTabItem(int index){
     setState(() {
       _selectedIndex = index;
     });
@@ -58,6 +58,22 @@ class _MyHomePageState extends State<MyHomePage> {
             BottomNavigationBarItem(
               icon: Icon(Icons.home), 
               title: Text('Home')
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.home),
+                title: Text('Group')
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.list),
+                title: Text('CheckList')
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.note),
+                title: Text('Catatan')
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.star),
+                title: Text('Oleh Oleh')
             ),
           ],
       ),
