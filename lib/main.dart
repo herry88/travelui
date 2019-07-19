@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travelui/components/mainmenu.dart';
 //import 'pages/account.dart';
 //import 'pages/order.dart';
 import 'package:travelui/dashboard/dashboard.dart';
@@ -30,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final _layoutPage = [
     Home(),
-//    Saved(),
+    MainMenu(),
 //    Order(),
 //    Group(),
 //    Inbox(),
@@ -72,8 +73,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 title: Text('Catatan')
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.star),
-                title: Text('Oleh Oleh')
+                icon: Icon(Icons.person),
+                title: Text('Account'),
+                  
             ),
           ],
       ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travelui/components/cardAccount.dart';
-
+import 'package:travelui/components/mainmenu.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -23,6 +23,8 @@ class _HomeState extends State<Home> {
       body: ListView(
         children: <Widget>[
           CardAccount(),
+          // Divider(),
+          MainMenu(),
         ],
       ),
     );
