@@ -3,6 +3,7 @@ import 'package:travelui/components/mainmenu.dart';
 //import 'pages/account.dart';
 //import 'pages/order.dart';
 import 'package:travelui/dashboard/dashboard.dart';
+import 'package:travelui/page/galleryimage.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(title: 'TravelAja'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -32,7 +34,7 @@ class _MyHomePageState extends State<MyHomePage> {
   final _layoutPage = [
     Home(),
     MainMenu(),
-//    Order(),
+    GalleryImage(),
 //    Group(),
 //    Inbox(),
 //    Account()
@@ -61,21 +63,16 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Text('Home')
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                title: Text('Group')
-            ),
-            BottomNavigationBarItem(
                 icon: Icon(Icons.list),
-                title: Text('CheckList')
+                title: Text('History')
             ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.note),
-                title: Text('Catatan')
+                icon: Icon(Icons.photo_library),
+                title: Text('Gallery')
             ),
             BottomNavigationBarItem(
                 icon: Icon(Icons.person),
                 title: Text('Account'),
-                  
             ),
           ],
       ),
