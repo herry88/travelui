@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:travelui/components/cardAccount.dart';
 import 'package:travelui/components/mainmenu.dart';
-
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();

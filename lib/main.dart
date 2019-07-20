@@ -3,6 +3,7 @@ import 'package:travelui/components/mainmenu.dart';
 //import 'pages/account.dart';
 //import 'pages/order.dart';
 import 'package:travelui/dashboard/dashboard.dart';
+import 'package:travelui/page/allProduct.dart';
 import 'package:travelui/page/galleryimage.dart';
 
 void main() => runApp(MyApp());
@@ -35,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Home(),
     MainMenu(),
     GalleryImage(),
-//    Group(),
+    AllProduct(),
 //    Inbox(),
 //    Account()
   ];

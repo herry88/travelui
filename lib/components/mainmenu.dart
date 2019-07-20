@@ -67,6 +67,15 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle : 'Search Flight',
     screenContent:'Pencarian'
   ),
+  MainMenuItem(
+    title : 'All Product',
+    icon : Icons.apps, 
+    colorBox : Colors.grey, 
+    iconColor : Colors.white, 
+    screenTitle : 'All Product',
+    screenWidget: AllProduct()
+  ),
+  
 ];
 
 class MainMenu extends StatelessWidget {
