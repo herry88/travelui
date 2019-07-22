@@ -19,14 +19,7 @@ List<MainMenuItem> mainMenuItem = [
     screenTitle : 'Search Flight',
     screenContent:'Pencarian'
   ),
-  MainMenuItem(
-    title : 'Cafe',
-    icon : Icons.local_cafe, 
-    colorBox : Colors.lightBlue, 
-    iconColor : Colors.white, 
-    screenTitle : 'Search Flight',
-    screenContent:'Pencarian'
-  ),
+ 
   MainMenuItem(
     title : 'Order',
     icon : Icons.payment, 
@@ -81,7 +74,8 @@ List<MainMenuItem> mainMenuItem = [
 class MainMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return GridView.count(
+    
+    return GridView.count(      
       shrinkWrap: true,
       crossAxisCount: 4,
       childAspectRatio: 1.0,

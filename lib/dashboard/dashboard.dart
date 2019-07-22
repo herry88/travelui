@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+
+import 'package:travelui/components/additionalMenu.dart';
+import 'package:travelui/components/promotion.dart';
 import 'package:travelui/components/cardAccount.dart';
 import 'package:travelui/components/mainmenu.dart';
 class Home extends StatefulWidget {
@@ -22,8 +25,18 @@ class _HomeState extends State<Home> {
       body: ListView(
         children: <Widget>[
           CardAccount(),
-          // Divider(),
-          MainMenu(),
+          
+          new Card(
+            child: new Container(
+              padding: new EdgeInsets.all(32.0),
+              child: MainMenu(),
+            ),
+            
+          ),
+          
+          AdditionalMenu(),
+          Divider(),
+          Promotion()
         ],
       ),
     );

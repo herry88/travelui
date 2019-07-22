@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+// import 'dart:async';
 import 'package:travelui/components/mainmenu.dart';
 //import 'pages/account.dart';
 //import 'pages/order.dart';
+// import 'package:travelui/loginPage.dart';
 import 'package:travelui/dashboard/dashboard.dart';
 import 'package:travelui/page/allProduct.dart';
 import 'package:travelui/page/galleryimage.dart';
@@ -33,6 +35,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final _layoutPage = [
+    // Login(),
     Home(),
     MainMenu(),
     GalleryImage(),
