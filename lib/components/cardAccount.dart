@@ -24,19 +24,19 @@ class CardAccount extends StatelessWidget {
         ),
         subtitle: Row(
           children: <Widget>[
-            RaisedButton.icon(
-              icon: Icon(
-                Icons.warning,
-                color: Colors.white,
-              ),
-              label: Text('Panic Button'),
-              onPressed: () {},
-              color: Colors.redAccent[200],
-              elevation: 0.0,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0)),
+            // RaisedButton.icon(
+            //   icon: Icon(
+            //     Icons.warning,
+            //     color: Colors.white,
+            //   ),
+            //   label: Text('Panic Button'),
+            //   onPressed: () {},
+            //   color: Colors.redAccent[200],
+            //   elevation: 0.0,
+            //   shape: RoundedRectangleBorder(
+            //       borderRadius: BorderRadius.circular(8.0)),
                   
-            ),
+            // ),
             Padding(padding: EdgeInsets.all(8.0),),
             // RaisedButton(
             //   child: Text('Panic Button'),
