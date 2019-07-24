@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../page/screen.dart';
 import '../page/allProduct.dart';
+import '../grouplist/grouplist.dart';
 
 List<MainMenuItem> mainMenuItem = [
   MainMenuItem(
@@ -42,7 +43,7 @@ List<MainMenuItem> mainMenuItem = [
     colorBox : Colors.lightGreen, 
     iconColor : Colors.white, 
     screenTitle : 'Search Flight',
-    screenContent:'Pencarian'
+    screenWidget: PageMainSiswa(),
   ),
    MainMenuItem(
     title : 'Napak Tilas',
