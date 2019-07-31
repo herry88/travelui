@@ -56,30 +56,30 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _layoutPage.elementAt(_selectedIndex),
-      bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _selectedIndex,
-          type: BottomNavigationBarType.fixed,
-          fixedColor: Colors.blue[900],
-          onTap: _onTabItem,
-          items: <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(Icons.home), 
-              title: Text('Home')
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.list),
-                title: Text('History')
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.photo_library),
-                title: Text('Gallery')
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(Icons.person),
-                title: Text('Account'),
-            ),
-          ],
-      ),
+//      bottomNavigationBar: BottomNavigationBar(
+//          currentIndex: _selectedIndex,
+//          type: BottomNavigationBarType.fixed,
+//          fixedColor: Colors.blue[900],
+//          onTap: _onTabItem,
+//          items: <BottomNavigationBarItem>[
+//            BottomNavigationBarItem(
+//              icon: Icon(Icons.home),
+//              title: Text('Home')
+//            ),
+//            BottomNavigationBarItem(
+//                icon: Icon(Icons.list),
+//                title: Text('History')
+//            ),
+//            BottomNavigationBarItem(
+//                icon: Icon(Icons.photo_library),
+//                title: Text('Gallery')
+//            ),
+//            BottomNavigationBarItem(
+//                icon: Icon(Icons.person),
+//                title: Text('Account'),
+//            ),
+//          ],
+//      ),
     );
   }
 }
