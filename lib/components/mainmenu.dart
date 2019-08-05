@@ -1,41 +1,43 @@
 import 'package:flutter/material.dart';
 import '../page/screen.dart';
 import '../page/allProduct.dart';
-import '../grouplist/grouplist.dart';
-
+//import '../grouplist/grouplist.dart';
+import '../grouplist/groupTravel.dart';
+import '../orderlist/orderList.dart';
+import '../uiprofile/profilui.dart';
 List<MainMenuItem> mainMenuItem = [
   MainMenuItem(
-    title : 'Flights',
-    icon : Icons.flight, 
-    colorBox : Colors.blue, 
+    title : 'Profile',
+    icon : Icons.person, 
+    colorBox : Colors.greenAccent, 
     iconColor : Colors.white, 
-    screenTitle : 'Search Flight',
-    screenContent:'Pencarian'
+    screenTitle : 'Info Profile',
+    screenWidget:MyHomePage()
   ),
   MainMenuItem(
-    title : 'Profile',
-    icon : Icons.android,
-    colorBox : Colors.green, 
+    title : 'Group',
+    icon : Icons.group,
+    colorBox : Colors.yellowAccent, 
     iconColor : Colors.white, 
-    screenTitle : 'Search Flight',
-    screenContent:'Pencarian'
+    screenTitle : 'List Group',
+    screenWidget: GroupList(),
   ),
  
   MainMenuItem(
     title : 'Order',
-    icon : Icons.payment, 
-    colorBox : Colors.orange, 
+    icon : Icons.list, 
+    colorBox : Colors.purpleAccent, 
     iconColor : Colors.white, 
-    screenTitle : 'Search Payment',
-    screenContent:'Pencarian'
+    screenTitle : 'Order',
+    screenWidget:OrderList(),
   ),
   MainMenuItem(
     title : 'Itinerary',
-    icon : Icons.airplay, 
-    colorBox : Colors.lightGreen, 
+    icon : Icons.note_add,
+    colorBox : Colors.blue,
     iconColor : Colors.white, 
-    screenTitle : 'Search Flight',
-    screenContent:'Pencarian'
+    screenTitle : 'Itinerary',
+    screenContent:'Itinerary'
   ),
    MainMenuItem(
     title : 'Gallery',
@@ -43,7 +45,7 @@ List<MainMenuItem> mainMenuItem = [
     colorBox : Colors.lightGreen, 
     iconColor : Colors.white, 
     screenTitle : 'Search Flight',
-    screenWidget: PageMainSiswa(),
+//    screenWidget: HomePage(),
   ),
    MainMenuItem(
     title : 'Napak Tilas',

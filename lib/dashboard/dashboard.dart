@@ -1,9 +1,34 @@
 import 'package:flutter/material.dart';
-
-// import 'package:travelui/components/additionalMenu.dart';
-// import 'package:travelui/components/promotion.dart';
 import 'package:travelui/components/cardAccount.dart';
 import 'package:travelui/components/mainmenu.dart';
+//import 'package:flutter/foundation.dart';
+//import 'dart:convert';
+//import 'dart:async';
+//import 'package:http/http.dart';
+
+class User{
+  final String name;
+
+  User({this.name});
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(
+        name: json['name'],
+      );
+  }
+}
+
+//Future<List<User>> fetchGroups(http.Client client) async {
+//  final response = await client.get('http://hijrah.asia/api/api/user/12/group');
+//
+//  // Use the compute function to run parsePhotos in a separate isolate.
+//  return compute(parseUsers, response.body);
+//}
+
+//List<User> parseUsers(String responseBody) {
+//  final parsed = json.decode(responseBody).cast<Map<String, dynamic>>();
+//
+//  return parsed.map<User>((json) => User.fromJson(json)).toList();
+//}
 
 class Home extends StatefulWidget {
   @override
@@ -11,6 +36,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+//  final List<User> users;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,7 +50,6 @@ class _HomeState extends State<Home> {
       body: ListView(
         children: <Widget>[
           CardAccount(),
-
           new Card(
             child: new Container(
               padding: new EdgeInsets.all(30.0),

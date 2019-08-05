@@ -43,11 +43,13 @@ class GroupsListBuilder extends StatelessWidget {
     return new ListView.builder(
       itemCount: groups.length,
       itemBuilder: (context, index) {
-        return new ListTile(
-            title: new Text("Id : ${groups[index].id}\n" +
+        return new Card(
+
+            child: new Text("Id : ${groups[index].id}\n" +
                 "User Id : ${groups[index].user_id}\n" +
                 "City : ${groups[index].city}\n" +
-                "referal : ${groups[index].referal}"));
+                "referal : ${groups[index].referal}")
+        );
       },
     );
   }

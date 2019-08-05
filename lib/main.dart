@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-// import 'dart:async';
+
 import 'package:travelui/components/mainmenu.dart';
-//import 'pages/account.dart';
-//import 'pages/order.dart';
-// import 'package:travelui/loginPage.dart';
+
+//import './page/order.dart';
 import 'package:travelui/dashboard/dashboard.dart';
-import 'package:travelui/page/allProduct.dart';
-import 'package:travelui/page/galleryimage.dart';
+//import 'package:travelui/page/allProduct.dart';
+//import './page/galleryimage.dart';
+//import './loginPage/loginui.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,22 +35,21 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final _layoutPage = [
-    // Login(),
+//    LogInScreen(),
     Home(),
     MainMenu(),
-    GalleryImage(),
-    AllProduct(),
-//    Inbox(),
-//    Account()
+//    CountyGridView(),
+//    Order(),
+//    AllProduct(),
   ];
 
 
 
-  void _onTabItem(int index){
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
+//  void _onTabItem(int index){
+//    setState(() {
+//      _selectedIndex = index;
+//    });
+//  }
 
   @override
   Widget build(BuildContext context) {
