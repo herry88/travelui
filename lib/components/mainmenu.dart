@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import '../page/screen.dart';
 import '../page/allProduct.dart';
-//import '../grouplist/grouplist.dart';
+import '../grouplist/grouplist.dart';
 import '../grouplist/groupTravel.dart';
 import '../orderlist/orderList.dart';
-import '../uiprofile/profilui.dart';
+import '../uiprofile/uiprofile/uiprofile.dart';
+//import '../uiprofile/profileuiTravel.dart';
 List<MainMenuItem> mainMenuItem = [
   MainMenuItem(
     title : 'Profile',
@@ -12,7 +13,7 @@ List<MainMenuItem> mainMenuItem = [
     colorBox : Colors.greenAccent, 
     iconColor : Colors.white, 
     screenTitle : 'Info Profile',
-    screenWidget:MyHomePage()
+    screenWidget: UiProfile()
   ),
   MainMenuItem(
     title : 'Group',
@@ -45,7 +46,7 @@ List<MainMenuItem> mainMenuItem = [
     colorBox : Colors.lightGreen, 
     iconColor : Colors.white, 
     screenTitle : 'Search Flight',
-//    screenWidget: HomePage(),
+    screenWidget: HomePage(),
   ),
    MainMenuItem(
     title : 'Napak Tilas',
