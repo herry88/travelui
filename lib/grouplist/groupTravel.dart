@@ -44,11 +44,29 @@ class GroupsListBuilder extends StatelessWidget {
       itemCount: groups.length,
       itemBuilder: (context, index) {
         return new Card(
-
-            child: new Text("Id : ${groups[index].id}\n" +
-                "User Id : ${groups[index].user_id}\n" +
-                "City : ${groups[index].city}\n" +
-                "referal : ${groups[index].referal}")
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Row(
+              children: <Widget>[
+                CircleAvatar(
+                  backgroundImage: NetworkImage(
+                      'http://hijrah.asia/storage/gallery/yK48kR4k9lTizXCCmAFKXEjg09dteRLAmUbiuK4A.jpeg'),
+                  radius: 3.0,
+                  child: Text(
+                    "${groups[index].referal}",
+                    style:
+                        TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: Text("Id : ${groups[index].id}\n" +
+                        "User Id : ${groups[index].user_id}\n" +
+                        "City : ${groups[index].city}\n" +
+                        "referal : ${groups[index].referal}")),
+              ],
+            ),
+          ),
         );
       },
     );
