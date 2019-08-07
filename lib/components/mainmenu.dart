@@ -5,7 +5,7 @@ import '../grouplist/grouplist.dart';
 import '../grouplist/groupTravel.dart';
 import '../orderlist/orderList.dart';
 //import '../uiprofile/uiprofile/uiprofile.dart';
-import '../uiprofile/profilui.dart';
+import '../uiprofile/profilchallenge.dart';
 
 //import '../uiprofile/profileuiTravel.dart';
 List<MainMenuItem> mainMenuItem = [
@@ -15,7 +15,7 @@ List<MainMenuItem> mainMenuItem = [
       colorBox: Colors.greenAccent,
       iconColor: Colors.white,
       screenTitle: 'Info Profile',
-      screenWidget: UiProfileList()
+      screenWidget: MyHomePage()
   ),
   MainMenuItem(
     title: 'Group',

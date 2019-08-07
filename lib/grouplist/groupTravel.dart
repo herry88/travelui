@@ -51,7 +51,7 @@ class GroupsListBuilder extends StatelessWidget {
                 CircleAvatar(
                   backgroundImage: NetworkImage(
                       'http://hijrah.asia/storage/gallery/yK48kR4k9lTizXCCmAFKXEjg09dteRLAmUbiuK4A.jpeg'),
-                  radius: 3.0,
+                  radius: 30.0,
                   child: Text(
                     "${groups[index].referal}",
                     style:
