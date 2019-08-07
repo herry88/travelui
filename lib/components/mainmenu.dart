@@ -4,7 +4,8 @@ import '../page/allProduct.dart';
 import '../grouplist/grouplist.dart';
 import '../grouplist/groupTravel.dart';
 import '../orderlist/orderList.dart';
-import '../uiprofile/uiprofile/uiprofile.dart';
+//import '../uiprofile/uiprofile/uiprofile.dart';
+import '../uiprofile/profileuiapi.dart';
 //import '../uiprofile/profileuiTravel.dart';
 List<MainMenuItem> mainMenuItem = [
   MainMenuItem(

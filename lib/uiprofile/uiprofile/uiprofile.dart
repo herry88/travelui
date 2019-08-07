@@ -41,6 +41,7 @@ class UiListBuilder extends StatelessWidget {
       'https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/09/04/15/lionel-messi-0.jpg?';
   final Color green = Color(0xFF1E8161);
 
+
   @override
   Widget build(BuildContext context) {
 //    var length;
@@ -61,6 +62,7 @@ class UiProfile extends StatefulWidget {
 }
 
 class _UiProfileState extends State<UiProfile> {
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
