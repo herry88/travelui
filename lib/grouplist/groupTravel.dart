@@ -84,10 +84,13 @@ class _GroupListState extends State<GroupList> {
     return Scaffold(
       appBar: AppBar(
         title: new Text("Groups List"),
-        leading: IconButton(
-          icon: Icon(Icons.search),
-          onPressed:(){}
-        ),
+        backgroundColor: Colors.blue,
+        actions:<Widget>[
+            IconButton(
+            icon: Icon(Icons.search),
+            onPressed:(){}
+          )
+        ],
       ),
       body: FutureBuilder<List<Group>>(
         future: fetchGroups(http.Client()),

@@ -17,7 +17,9 @@ class _GalleryPageState extends State<GalleryPage> {
       body: new GridView.extent(
         maxCrossAxisExtent: 159.0,
         mainAxisSpacing: 5.0,
-        
+        crossAxisSpacing: 5.0,
+        padding: EdgeInsets.all(5.0),
+        // children: _buildGridTiles(29),
       ),
     );
   }
