@@ -6,7 +6,7 @@ import 'package:travelui/components/mainmenu.dart';
 import 'package:travelui/dashboard/dashboard.dart';
 //import 'package:travelui/page/allProduct.dart';
 //import './page/galleryimage.dart';
-//import './loginPage/loginui.dart';
+import './loginPage/loginui.dart';
 
 void main() => runApp(MyApp());
 
@@ -35,7 +35,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final _layoutPage = [
-//    LogInScreen(),
+    LogInScreen(),
     Home(),
     MainMenu(),
 //    CountyGridView(),

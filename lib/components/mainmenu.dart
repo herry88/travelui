@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import '../page/screen.dart';
 import '../page/allProduct.dart';
-import '../grouplist/grouplist.dart';
+import '../galleryPage/galleryPage.dart';
+//import '../grouplist/grouplist.dart';
 import '../grouplist/groupTravel.dart';
 import '../orderlist/orderList.dart';
 //import '../uiprofile/uiprofile/uiprofile.dart';
+import '../initerary/initeraryPage.dart';
 import '../uiprofile/profilchallenge.dart';
 
 //import '../uiprofile/profileuiTravel.dart';
@@ -39,14 +41,15 @@ List<MainMenuItem> mainMenuItem = [
       colorBox: Colors.blue,
       iconColor: Colors.white,
       screenTitle: 'Itinerary',
-      screenContent: 'Itinerary'),
+      screenWidget: IniteraryPage(),
+  ),
   MainMenuItem(
     title: 'Gallery',
     icon: Icons.photo_library,
     colorBox: Colors.lightGreen,
     iconColor: Colors.white,
     screenTitle: 'Search Flight',
-    screenWidget: HomePage(),
+    screenWidget: GalleryPage(),
   ),
   MainMenuItem(
       title: 'Napak Tilas',
@@ -102,40 +105,43 @@ class MainMenuItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Container(
-          height: 40.0,
-          width: 40.0,
-          decoration: BoxDecoration(
-            color: colorBox,
-            shape: BoxShape.circle,
+    return SingleChildScrollView(
+      child: Column(
+        children: <Widget>[
+//        SingleChildScrollView(),
+          Container(
+            height: 40.0,
+            width: 40.0,
+            decoration: BoxDecoration(
+              color: colorBox,
+              shape: BoxShape.circle,
+            ),
+            child: IconButton(
+              icon: Icon(icon, color: iconColor),
+              onPressed: () {
+                Route route = MaterialPageRoute(builder: (context) {
+                  if (screenWidget == null) {
+                    return ScreenGeneral(
+                      title: screenTitle,
+                      content: screenContent,
+                    );
+                  }
+                  return screenWidget;
+                });
+                Navigator.of(context).push(route);
+              },
+            ),
           ),
-          child: IconButton(
-            icon: Icon(icon, color: iconColor),
-            onPressed: () {
-              Route route = MaterialPageRoute(builder: (context) {
-                if (screenWidget == null) {
-                  return ScreenGeneral(
-                    title: screenTitle,
-                    content: screenContent,
-                  );
-                }
-                return screenWidget;
-              });
-              Navigator.of(context).push(route);
-            },
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(top: 2.0),
-          child: Text(
-            title,
-            style: TextStyle(fontSize: 12.0),
-            textAlign: TextAlign.center,
-          ),
-        )
-      ],
+          Padding(
+            padding: const EdgeInsets.only(top: 2.0),
+            child: Text(
+              title,
+              style: TextStyle(fontSize: 12.0),
+              textAlign: TextAlign.center,
+            ),
+          )
+        ],
+      ),
     );
   }
 }

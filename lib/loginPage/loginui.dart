@@ -79,15 +79,27 @@ class _LogInScreenState extends State<LogInScreen>
                                         prefixIcon: Padding(
                                             padding:
                                                 EdgeInsets.only(right: 7.0),
-                                            child: new Image.asset(
-                                                "assets/images/user_icon.png",
-                                                height: 25.0,
-                                                width: 25.0,
-                                                fit: BoxFit.scaleDown))),
+                                            child: new Icon(Icons.person_pin)
+                                        )),
                                     keyboardType: TextInputType.emailAddress,
                                   ),
                                 ),
                                 //Password UI-----------------------------------
+                                new Padding(
+                                    padding: EdgeInsets.only(left: 10.0, right: 10.0),
+                                  child: new TextFormField(
+                                    controller: password_controller,
+                                    autofocus: false,
+                                    decoration: new InputDecoration(
+                                      labelText: "Password",
+                                      prefixIcon: Padding(
+                                        padding: EdgeInsets.only(right: 7.0),
+                                        child: new Icon(Icons.vpn_key),
+
+                                      )
+                                    ),
+                                  ),
+                                ),
                               ],
                             )),
                       )

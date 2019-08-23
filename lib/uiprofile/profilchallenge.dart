@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 
@@ -11,8 +10,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
-  final String url = 'http://hijrah.asia/storage/upload/profile/LfSeFQBWcsmT2E1X3eZdoueYHedn4L7ZxDJayijm.jpeg';
+  final String url =
+      'http://hijrah.asia/storage/upload/profile/LfSeFQBWcsmT2E1X3eZdoueYHedn4L7ZxDJayijm.jpeg';
 //  final Color green = Color(0xFF1E8161);
 
   @override
@@ -24,7 +23,7 @@ class _MyHomePageState extends State<MyHomePage> {
         backgroundColor: Colors.blue,
         leading: IconButton(
           icon: Icon(Icons.arrow_back_ios),
-          onPressed: (){},
+          onPressed: () {},
         ),
 //        actions: <Widget>[
 //          IconButton(
@@ -56,10 +55,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       child: Column(
                         children: <Widget>[
                           IconButton(
-                            icon: Icon(Icons.message, color: Colors.green,),
-                            onPressed: (){},
+                            icon: Icon(
+                              Icons.message,
+                              color: Colors.green,
+                            ),
+                            onPressed: () {},
                           ),
-
                         ],
                       ),
                     ),
@@ -69,154 +70,122 @@ class _MyHomePageState extends State<MyHomePage> {
                       decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           image: DecorationImage(
-                              fit: BoxFit.fill,
-                              image: NetworkImage(url)
-                          )
-                      ),
+                              fit: BoxFit.fill, image: NetworkImage(url))),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(right: 28),
                       child: Column(
                         children: <Widget>[
                           IconButton(
-                            icon: Icon(Icons.phone, color: Colors.green,),
-                            onPressed: (){},
+                            icon: Icon(
+                              Icons.phone,
+                              color: Colors.green,
+                            ),
+                            onPressed: () {},
                           ),
-
                         ],
                       ),
                     )
                   ],
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(
-                      top: 16
-                  ),
-                  child: Text("ID: 1",
-                    style: TextStyle(
-                        color: Colors.blue
-                    ),
+                  padding: const EdgeInsets.only(top: 16),
+                  child: Text(
+                    "ID: 1",
+                    style: TextStyle(color: Colors.blue),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.only(top: 16, bottom: 32),
-                  child: Text('admin',
+                  child: Text(
+                    'admin',
                     style: TextStyle(
                         color: Colors.blue,
                         fontSize: 24,
-                        fontWeight: FontWeight.bold
-                    ),
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
                 Divider()
-//                Padding(
-//                  padding: const EdgeInsets.only(left: 16, right: 16),
-//                  child: Row(
-//                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                    children: <Widget>[
-//                      Column(
-//                        children: <Widget>[
-//                          Icon(Icons.group_add, color: Colors.white,),
-//                          Text('Friends',
-//                            style: TextStyle(
-//                                color: Colors.white
-//                            ),
-//                          ),
-//                        ],
-//                      ),
-//                      Column(
-//                        children: <Widget>[
-//                          Icon(Icons.group, color: Colors.white,),
-//                          Text('Groups',
-//                            style: TextStyle(
-//                                color: Colors.white
-//                            ),
-//                          ),
-//                        ],
-//                      ),
-//                      Column(
-//                        children: <Widget>[
-//                          Icon(Icons.videocam, color: Colors.white,),
-//                          Text('Videos',
-//                            style: TextStyle(
-//                                color: Colors.white
-//                            ),
-//                          ),
-//                        ],
-//                      ),
-//                      Column(
-//                        children: <Widget>[
-//                          Icon(Icons.favorite, color: Colors.white,),
-//                          Text('Likes',
-//                            style: TextStyle(
-//                                color: Colors.white
-//                            ),
-//                          ),
-//                        ],
-//                      )
-//                    ],
-//                  ),
-//                )
               ],
             ),
           ),
           Container(
-            height: MediaQuery.of(context).size.height/3,
-            padding: EdgeInsets.all(35),
+            height: MediaQuery.of(context).size.height / 3,
+            padding: EdgeInsets.only(left: 15.9, right: 15.9),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        Icon(Icons.person, color: Colors.blue,),
-//                        new Text('Nama Alias', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),),
-                        Text('Admin',
+//                        Icon(
+//                          Icons.person,
+//                          color: Colors.blue,
+//                        ),
+
+                        new Text(
+                          'Nama Alias',
                           style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold
-                          ),
+                              color: Colors.blue, fontWeight: FontWeight.bold),
+                        ),
+                        Text(
+                          'Admin',
+                          style: TextStyle(
+                              color: Colors.grey, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
-
                     Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Icon(Icons.email, color: Colors.blue,),
-                        Text('admin@gmail.com',
+                        Icon(
+                          Icons.email,
+                          color: Colors.blue,
+                        ),
+                        Text(
+                          'admin@gmail.com',
                           style: TextStyle(
-                              color: Colors.grey,
-                              fontWeight: FontWeight.bold
-                          ),
+                              color: Colors.grey, fontWeight: FontWeight.bold),
                         )
                       ],
                     ),
                   ],
                 ),
-                Spacer(),
+//                Spacer(),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     Column(
                       children: <Widget>[
-                        Icon(Icons.phone_android, color: Colors.blue,),
-                        Text('null')
+//                        mainAzisAligment : MainAxisAlignment.spaceEvenly,
+                        Icon(
+                          Icons.phone_android,
+                          color: Colors.blue,
+                        ),
+                        Text(
+                          'Null',
+                          style: TextStyle(
+                              color: Colors.grey, fontWeight: FontWeight.bold),
+                        ),
                       ],
                     ),
-//                    Column(
-//                      children: <Widget>[
-//                        Icon(Icons.blur_circular, color: Colors.grey,),
-//                        Text('Daily bonus')
-//                      ],
-//                    ),
-//                    Column(
-//                      children: <Widget>[
-//                        Icon(Icons.visibility, color: Colors.grey,),
-//                        Text('Visitors')
-//                      ],
-//                    ),
+                    Column(
+                      children: <Widget>[
+//                        mainAzisAligment : MainAxisAlignment.spaceEvenly,
+//                        Icon(
+//                          Icons.home,
+//                          color: Colors.blue,
+//                        ),
+                        Text('Alamat', style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),),
+                        Text(
+                          'jl. p. flores II',
+                          style: TextStyle(
+                              color: Colors.grey, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ],
